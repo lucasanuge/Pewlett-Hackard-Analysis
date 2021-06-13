@@ -18,6 +18,7 @@ Next, as shown in the **mentorship_eligibilty.csv** file, we have found the empl
 ## Summary
 Q1. Who accepts the mentorship program?
 We will need to put out a survey to all the employees that are eligible for the mentorship program and ask them whether they are up for entering the program. We will then entering our findings to the **mentorship_eligibilty.csv** with a new column (survey) specifiying whether the employee wants to enter the program or not. We can then filter the data using SQL to find all the employees that are entering the program using the following code:
+</br>
 SELECT
 </br>
   emp_no,
@@ -41,8 +42,7 @@ SELECT
  
  Q2. Which departments have the most number of retiring employees?
  We can achieve this by q=creating a query similar to the one we made in the module where we count the number of employees retiring in each department, but here we will need to order by decending order. The code will be the following:
- --Group by in sql
- 
+ </br>
 SELECT COUNT (ce.emp_no), de.dept_no
 </br>
 INTO need_replacement_emp
